@@ -6,21 +6,17 @@ from states import State,Sequence,Excel2shell
 
 
 def index()->pc.components:
-    return pc.vstack(
+    return pc.box(
         navbar(),
-        pc.center(
         pc.vstack(
-            pc.heading("Introduction:"),
-            pc.text("This is a web toolkits build by xiaoguang!"),
-        ),
+            pc.heading("BioToolkits",style=heading_style),
+            pc.text("This is a web toolkits for bioinformatics written by Pan Xiaoguang."),
             style=index_body_style,
-            ),
-            spacing="0em",
-            fontFamily="Open Sans",
+        )
     )
 
 def seuquencetools()->pc.components:
-    return pc.vstack(
+    return pc.box(
                 navbar(),
                 pc.center(
                 pc.circle(style=[circle_style,circle1_style]),
@@ -66,7 +62,7 @@ def seuquencetools()->pc.components:
                                             is_disabled= Sequence.dis),
                                   pc.button("Clean!",
                                             style=button_style,
-                                            on_click = Sequence.clean
+                                            on_click = Sequence.nima2
                                             )
                                   
                                 ),

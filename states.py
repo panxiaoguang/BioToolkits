@@ -45,7 +45,7 @@ class Sequence(State):
     def nima(self):
         self.waiting = not (self.waiting)
     
-    def clean(self):
+    def nima2(self):
         self.input=""
         self.output=[]
         self.blatData = [[]]

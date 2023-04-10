@@ -58,10 +58,9 @@ all_style={
 }
 
 index_body_style={
-    "width":"100%",
-    "height":"600px",
+    "justify_content":"center",
+    "padding":"18%",
     "bgColor":"#DFE9F2",
-    "font_family":"Open Sans",
 }
 
 excel_body_style={
